@@ -1,7 +1,7 @@
 const { Given, When, Then } = require("@cucumber/cucumber");
 const assert = require("assert");
 
-const Traveler = require("./../../models/Traveler")
+const { Traveler } = require("./../../models/Traveler")
 const { carroca } = require("./../../app");
 
 let passengers        = [];

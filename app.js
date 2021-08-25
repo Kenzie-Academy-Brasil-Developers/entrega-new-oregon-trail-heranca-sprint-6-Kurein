@@ -1,8 +1,12 @@
-const Traveler  = require("./models/Traveler");
+const {Traveler}  = require("./models/Traveler");
+const {Hunter}  = require("./models/Traveler");
+const {Doctor}  = require("./models/Traveler");
 const Wagon     = require("./models/Wagon");
 
 let viajante = new Traveler();
 let carroca = new Wagon();
+let cacador = new Hunter();
+let doutor = new Doctor();
 
 let viajanteSergio = new Traveler();
 let viajanteSimone = new Traveler();
@@ -15,4 +19,6 @@ let viajanteDiana  = new Traveler();
 module.exports = {
     viajante,
     carroca,
+    cacador,
+    doutor
 }
